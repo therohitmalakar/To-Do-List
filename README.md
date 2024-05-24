@@ -1,2 +1,2 @@
 # To-Do-List
-Made this project to test and improve my javaScript.
+The project is present in another branch i.e. my-new-branch
