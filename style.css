@@ -1,0 +1,141 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+    background-color:#6E6E90 ;
+    
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh; 
+    padding: 10px;
+} 
+
+.container h1{
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    color: #7FBFEB;
+    font-style: normal;
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+.checkbox{
+    min-height: 40vh;
+    width: 100%;
+    max-width: 400px;
+    background-color:#32315B;
+    border-radius: 5px;
+    margin: 100px auto 20px;
+    padding-bottom: 10px;
+}
+
+ #study{
+    display: flex;
+    font-size: 15px;
+    color: #6F6F91;
+    font-weight: bold;
+    justify-content: space-between;
+    margin-left: 15px;
+    padding-top: 10px;
+    margin-top: 0px;
+    align-self: self-end;
+    user-select: none;
+}
+ #book{
+    display: inline-flex;
+    padding-top: 0px;
+    align-self: first baseline;
+    max-width: 25px;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.empty-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #44446A;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    margin: 0px 10px 25px 10px;
+}
+
+#input-box{
+    border-radius: 2.5px;
+    border: none;
+    outline: none;
+    color: #F2F2F2;
+    background-color:#292850 ;
+    padding: 8px;
+    font-weight: 15px;
+    margin-left: 10px;
+}
+
+button{
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #789CC0;
+    padding: 5px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #6a8aaa ;
+    transition: 0.7s;
+}
+
+ul li{
+    color:#F2F2F2 ;
+    list-style: none;
+    font-size: 15px;
+    padding: 8px 8px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-image: url(assets/images/dashed.png);
+    background-size: cover;
+    background-position: center;
+    top: 13px;
+    left: -25px;
+}
+
+ul li.clicked{
+    color: #789CC0;
+}
+
+ul li.clicked::before{
+    background-image: url(assets/images/marked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: #789CC0;
+}
